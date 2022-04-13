@@ -10,8 +10,8 @@ count = 2
 
 firstname = input("\n Please type your first name for the Zaun Name Genrator:\n")
 
-if firstname.lower()[:-1] in vowels:
-    finalname += firstname[:-1] + 'o'
+if firstname.lower()[-1] in vowels:
+    finalname += firstname + 'o'
 else:
     for i in range(len(firstname)):
         if not firstname.lower()[-count] in vowels:
@@ -39,6 +39,3 @@ elif int(month) in range (9, 13):
     finalname += ' ' + str("Zaun")
 print()
 print(finalname)
-
-
-###I am literally changing this file
